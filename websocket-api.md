@@ -3,6 +3,8 @@
 * Data can be accessed either in a single or combined streams by sending AquaNow subscription messages. 
 * The following are the detail information regarding the websocket api and subscription messages.
 
+[Raw Aggregated Market Data](#raw-aggregated-market-data)
+
 # Aggregated Market Data 
 ## Raw Aggregated Market Data
 * Real-time aggregated market data across various marketplaces and exchanges
