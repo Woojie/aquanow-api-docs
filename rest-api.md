@@ -34,8 +34,19 @@ Given the trade side and side provide by user, what is the most optimal way to r
 **API EndPoint:** /v1/pretrade/symbol/:symbol/side/:side/size/:size
 
 ## Market Impact Projection
-Provides user a projection on the market impact for a range of trade size
+Provides user a projection on the market impact for every 100 units of cryptocurrency of a given trade size range (0, 1000]
 
 **HTTP Method:** GET
 
 **API EndPoint:** /v1/marketimpactprojection/symbol/:symbol/side/:side
+
+**Payload:**
+```javascript
+[
+  1.667,
+  15.46,
+  21.79
+  ....
+  309.91
+]
+```
