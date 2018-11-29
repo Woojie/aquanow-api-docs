@@ -6,6 +6,6 @@ AquaNow provides best-in-class execution platform and institutional-quality trad
 
 Name | Description
 ------------ | ------------ 
-[rest-api.md](./rest-api.md) | Rest API Information
+[rest-api.md](./rest-api.md) | Market Data & Pre-Trade REST API Information
 [websocket-api.md](./websocket-api.md) | Websocket API Information
 [execution-api.md](./execution-api.md) | Execution API Information
