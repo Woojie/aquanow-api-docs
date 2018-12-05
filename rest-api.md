@@ -9,9 +9,9 @@ Provide users the last 3 hours aggregated best bid, ask & spread
 
 **HTTP Method:** GET
 
-**API EndPoint:** /v1/history/symbol/:symbol
+**API EndPoint:** /v1/history?symbol=:symbol
 
-**Example:** /v1/history/symbol/BTCUSD
+**Example:** /v1/history?symbol=BTC-USD
 
 **Payload:**
 ```javascript
@@ -19,7 +19,7 @@ Provide users the last 3 hours aggregated best bid, ask & spread
   {
     "dataType": "aggBBO",           // Data Type
     "dateTime": '1543471590306',    // Timestamp
-    "symbol": 'BTCUSD',             // Symbol
+    "symbol": 'BTC-USD',             // Symbol
     "bestBid": 6000,                // Best Bid
     "bestAsk": 6010,                // Best Ask
     "spread": 10                    // Bid Ask Spread
@@ -33,18 +33,18 @@ Given the trade side and side provide by user, what is the most optimal way to r
 
 **HTTP Method:** GET
 
-**API EndPoint:** /v1/pretrade/symbol/:symbol/side/:side/size/:size
+**API EndPoint:** /v1/pretrade?symbol=symbol&side=:side&size=:size
 
-**Example:** /v1/pretrade/symbol/BTCUSD/side/buy/size/100
+**Example:** /v1/pretrade?symbol=BTC-USD&side=buy&size=100
 
 ## Market Impact Projection
 Provides user a projection on the market impact for every 100 units of cryptocurrency of a given trade size range (0, 1000]
 
 **HTTP Method:** GET
 
-**API EndPoint:** /v1/marketimpactprojection/symbol/:symbol/side/:side
+**API EndPoint:** /v1/marketimpactprojection?symbol=:symbol&side=:side
 
-**Example:** /v1/marketimpactprojection/symbol/BTCUSD/side/buy
+**Example:** /v1/marketimpactprojection?symbol=BTC-USD&side=buy
 
 **Payload:**
 ```javascript
