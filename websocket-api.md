@@ -85,3 +85,15 @@
   ]
 }
 ```
+
+## Unsubscripion Message
+
+
+**Subscription Message:**
+```javascript
+{
+  "type": "ubsubscribe",      // Message Type
+  "channel": 'orderbook',     // Subscription Channel
+  "pair": 'BTCUSD',           // Symbol
+}
+```
