@@ -133,6 +133,6 @@
 {
   "type": "unsubscribe",      // Message Type
   "channel": 'orderbook',     // Subscription Channel
-  "pair": 'BTC-USD',           // Symbol
+  "pair": 'BTC-USD'           // Symbol
 }
 ```
