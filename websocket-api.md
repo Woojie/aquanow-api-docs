@@ -23,7 +23,7 @@
   dateType: 'aggOB',
   lastUpdated: 1544004380004,
   includeFees: 0,
-  symbbol: 'BTC-USD',
+  symbol: 'BTC-USD',
   bids:
   [
     {
@@ -64,18 +64,24 @@
   dateType: 'aggOB',
   lastUpdated: 1544004380004,
   includeFees: 0,
-  symbbol: 'BTC-USD',
+  symbol: 'BTC-USD',
   bids:
   [
-    "quote": "6000",        // Price
-    "quantity": '2.13',     // Quote Size
-    "exchange": 'bin5'      // Exchange
+    {
+      "quote": "6000",        // Price
+      "quantity": '2.13',     // Quote Size
+      "exchange": 'bin5'      // Exchange
+    },
+    ...
   ],
   asks:
   [
-    "quote": "6005",        // Price
-    "quantity": '1.23',     // Quote Size
-    "exchange": 'bin5'      // Exchange
+    {
+      "quote": "6005",        // Price
+      "quantity": '1.23',     // Quote Size
+      "exchange": 'bin5'      // Exchange
+    },
+    ...
   ]
 }
 ```
@@ -99,7 +105,7 @@
   dateType: 'aggOB',
   lastUpdated: 1544004380004,
   includeFees: 1,
-  symbbol: 'BTC-USD',
+  symbol: 'BTC-USD',
   bids:
   [
     {
@@ -121,7 +127,7 @@
 }
 ```
 
-## Unsubscripion Message
+## Unsubscription Message
 
 ```javascript
 {
