@@ -12,7 +12,7 @@
 ```javascript
 {
   "type": "subscribe",      // Message Type
-  "channel": 'orderbook',   // Subscription Channel
+  "channel": 'orderBook',   // Subscription Channel
   "pair": 'BTC-USD'         // Symbol
 }
 ```
@@ -52,7 +52,7 @@
 ```javascript
 {
   "type": "subscribe",      // Message Type
-  "channel": 'orderbook',   // Subscription Channel
+  "channel": 'orderBook',   // Subscription Channel
   "pair": 'BTC-USD',        // Symbol
   "binSize":5               // Price Range for the Bucket
 }
@@ -93,7 +93,7 @@
 ```javascript
 {
   "type": "subscribe",      // Message Type
-  "channel": 'orderbook',   // Subscription Channel
+  "channel": 'orderBook',   // Subscription Channel
   "pair": 'BTC-USD',         // Symbol
   "includeFees":1           // Flag to Incorporate Exchange Fees
 }
@@ -132,7 +132,7 @@
 ```javascript
 {
   "type": "unsubscribe",      // Message Type
-  "channel": 'orderbook',     // Subscription Channel
+  "channel": 'orderBook',     // Subscription Channel
   "pair": 'BTC-USD'           // Symbol
 }
 ```
