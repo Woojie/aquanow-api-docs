@@ -4,7 +4,7 @@
 # Execution Algos
 Aquanow provides various of execution algos. They provide different execution characteristics and the basic algos include SOR & TWAP. 
 
-## Get All Trade Orders
+## Get Trade Orders
 
 **HTTP Method:** GET
 
@@ -58,6 +58,71 @@ request(options, function (error, response, body) {
     ]
   }
 }
+```
+
+## Place Trade Orders
+User can place orders by specifying the execution algo and the associated parameters
+
+**HTTP Method:** POST
+
+**API EndPoint:** https://execute-api.aquanow.io/order
+
+**Sample Code:**
+
+```
+var request = require("request");
+
+const order = {
+  username: "userId1",
+  ticker: "BTC-USD",
+  strategy: "TWAP",
+  tradeSide: "buy",
+  tradePrice: 3800,
+  tradeSize: 1.2,
+  tradeDuration: 300
+};
+
+var options = { method: 'POST',
+  url: 'https://execute-api.aquanow.io/order',
+  headers:
+   {
+     'Content-Type': 'application/json',
+     'x-api-key': YOUR_API_KEY
+   },
+   data: order
+};
+request(options, function (error, response, body) {
+  if (error) throw new Error(error);
+  console.log(body);
+});
+```
+
+## Cancal Trade Orders
+User can cancel a live order with the associated order Id
+
+**HTTP Method:** PUT
+
+**API EndPoint:** https://execute-api.aquanow.io/order
+
+**Sample Code:**
+
+```
+var request = require("request");
+const order = { orderId: "21f285a0-4ce3-11e9-b31b-abd75bfdd676" };
+
+var options = { method: 'PUT',
+  url: 'https://execute-api.aquanow.io/order',
+  headers:
+   {
+     'Content-Type': 'application/json',
+     'x-api-key': YOUR_API_KEY
+   },
+   data: order
+};
+request(options, function (error, response, body) {
+  if (error) throw new Error(error);
+  console.log(body);
+});
 ```
 
  
