@@ -20,7 +20,8 @@ var options = { method: 'GET',
   headers:
    {
      'Content-Type': 'application/json',
-     'x-api-key': YOUR_API_KEY
+     'x-api-key': YOUR_API_KEY,
+     'x-api-secret': YOUR_API_SECRET
    }
 };
 request(options, function (error, response, body) {
@@ -87,7 +88,8 @@ var options = { method: 'POST',
   headers:
    {
      'Content-Type': 'application/json',
-     'x-api-key': YOUR_API_KEY
+     'x-api-key': YOUR_API_KEY,
+     'x-api-secret': YOUR_API_SECRET
    },
    data: order
 };
@@ -115,7 +117,8 @@ var options = { method: 'PUT',
   headers:
    {
      'Content-Type': 'application/json',
-     'x-api-key': YOUR_API_KEY
+     'x-api-key': YOUR_API_KEY,
+     'x-api-secret': YOUR_API_SECRET
    },
    data: order
 };
