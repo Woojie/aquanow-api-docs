@@ -33,9 +33,9 @@ Given the trade side and side provide by user, what is the most optimal way to r
 
 **HTTP Method:** GET
 
-**API EndPoint:** /v1/pretrade?symbol=symbol&side=:side&size=:size&includeFees={0,1}
+**API EndPoint:** /v1/pretradesummary?symbol=symbol&side=:side&size=:size&includeFees={0,1}
 
-**Example:** /v1/pretrade?symbol=BTC-USD&side=buy&size=100&includeFees=1
+**Example:** /v1/pretradesummary?symbol=BTC-USD&side=buy&size=100&includeFees=1
 
 ## Market Impact Projection
 Provides user a projection on the market impact for every 100 units of cryptocurrency of a given trade size range
