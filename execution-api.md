@@ -97,7 +97,7 @@ request(options, function (error, response, body) {
 });
 ```
 
-## Cancal Trade Orders
+## Cancel Trade Orders
 User can cancel a live order with the associated order Id
 
 **HTTP Method:** PUT
